@@ -20,7 +20,7 @@ describe('testing File Endpoints', () => {
   let parentId = '';
 
   const user = {
-    email: 'abbk1983@gmail.com',
+    email: 'bob@dylan.com',
     password: 'toto1234!',
   };
 

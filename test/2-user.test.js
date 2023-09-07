@@ -16,7 +16,7 @@ describe('testing User Endpoints', () => {
   let token = '';
   let userId = '';
   const user = {
-    email: 'abbk1983@gmail.com',
+    email: 'bob@dylan.com',
     password: 'toto1234!',
   };
 
@@ -50,7 +50,7 @@ describe('testing User Endpoints', () => {
 
     it('fails to create user because password is missing', async () => {
       const user = {
-        email: 'abbk1983@gmail.com',
+        email: 'bob@dylan.com',
       };
       const response = await request(app).post('/users').send(user);
       const body = JSON.parse(response.text);
@@ -70,7 +70,7 @@ describe('testing User Endpoints', () => {
 
     it('fails to create user because it already exists', async () => {
       const user = {
-        email: 'abbk1983@gmail.com',
+        email: 'bob@dylan.com',
         password: 'toto1234!',
       };
       const response = await request(app).post('/users').send(user);
